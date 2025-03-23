@@ -1,0 +1,132 @@
+Bien sûr ! Voici une explication détaillée du code HTML et CSS de la section **Compétences** :  
+
+---
+
+## 🔥 **Explication du Code HTML :**
+```html
+<main id="contenu3">
+    <section>
+        <h3 class="titre">Mes Compétences</h3>
+        <div class="competences">
+            <div class="comp-tech">
+                <h4>Compétences Techniques</h4>
+                <ul>
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP / MySQL</li>
+                    <li>Développement Frontend (React.js)</li>
+                    <li>Développement Backend (Node.js)</li>
+                </ul>
+            </div>
+            <div class="comp-perso">
+                <h4>Compétences Personnelles</h4>
+                <ul>
+                    <li>Communication efficace</li>
+                    <li>Travail en équipe</li>
+                    <li>Esprit analytique</li>
+                    <li>Gestion du temps</li>
+                    <li>Adaptabilité</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+```
+### **Analyse :**
+- `<main id="contenu3">` : La balise `<main>` est utilisée pour marquer le contenu principal de la section **Compétences**. L'attribut `id="contenu3"` est important pour pouvoir styliser cette section facilement avec du CSS.
+- `<h3 class="titre">Mes Compétences</h3>` : Titre principal de la section pour indiquer le sujet abordé.
+- `<div class="competences">` : Conteneur principal qui regroupe toutes les compétences.
+- `<div class="comp-tech">` et `<div class="comp-perso">` : 
+  - Séparation en deux catégories : *techniques* (les compétences en développement) et *personnelles* (les soft skills).
+  - Chaque catégorie est représentée par un titre `<h4>` et une liste `<ul>` d'éléments `<li>`.
+
+---
+
+## 💅 **Explication du Code CSS :**
+```css
+#contenu3 {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+}
+
+.competences {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.comp-tech, .comp-perso {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+h4 {
+    color: #007bff;
+    margin-bottom: 0.8rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .competences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comp-tech, .comp-perso {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+```
+### **Analyse :**
+1. **#contenu3 :**
+   - `margin: 2rem 0;` : Marge verticale pour espacer la section du reste de la page.
+   - `padding: 1rem;` : Espace intérieur pour aérer le contenu.
+   - `background-color: #f4f4f9;` : Couleur de fond gris clair.
+   - `border-radius: 10px;` : Bords arrondis pour un aspect moderne.
+
+2. **.competences :**
+   - `display: flex;` : Permet d'aligner les deux blocs côte à côte.
+   - `justify-content: space-around;` : Espace égal entre les blocs.
+   - `margin-top: 1rem;` : Espacement entre le titre et les blocs.
+
+3. **.comp-tech et .comp-perso :**
+   - `background-color: #fff;` : Couleur de fond blanche pour contraste.
+   - `padding: 1rem;` : Aération interne pour un meilleur confort de lecture.
+   - `border-radius: 10px;` : Bords arrondis.
+   - `box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);` : Ombre douce pour créer un effet de relief.
+   - `width: 45%;` : Chaque bloc prend 45% de la largeur du conteneur.
+
+4. **Style des listes :**
+   - `list-style-type: square;` : Points carrés pour les éléments de la liste.
+   - `margin-bottom: 0.5rem;` : Espacement entre chaque compétence.
+   - `color: #333;` : Couleur du texte pour une bonne lisibilité.
+
+5. **Adaptation mobile (Responsive) :**
+   - Utilisation d'une **media query** pour les écrans de largeur inférieure à **768px**.
+   - Les blocs passent en colonne (`flex-direction: column;`).
+   - `width: 80%` pour que chaque bloc soit bien visible sur les petits écrans.
+
+---
+
+## 🔎 **Conclusion :**
+- ✅ La mise en page est **moderne**, **structurée** et **responsive**.
+- ✅ Les compétences sont bien mises en valeur, ce qui est important pour un portfolio personnel.
+- ✅ Adaptation aux petits écrans pour une accessibilité optimale.
+
+Si tu veux personnaliser encore plus ou si tu as des questions, n'hésite pas ! 😊🚀
